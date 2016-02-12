@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c0850">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light On"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/mySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/SwitchStyle"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Off"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_logout"
+            android:background="#8e25bd"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Readings"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:theme="@style/StatusLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/status_desc_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status1"
+                android:theme="@style/StatusHeading"/>
+            <TextView
+                android:id="@+id/status_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 KWh"
+                android:theme="@style/StatusValue"/>
+        </LinearLayout>
+        <LinearLayout
+            android:theme="@style/StatusLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/status_desc_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status2"
+                android:theme="@style/StatusHeading"/>
+            <TextView
+                android:id="@+id/status_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 KWh"
+                android:theme="@style/StatusValue"/>
+        </LinearLayout>
+        <LinearLayout
+            android:theme="@style/StatusLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/status_desc_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status3"
+                android:theme="@style/StatusHeading"/>
+            <TextView
+                android:id="@+id/status_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hh:mm"
+                android:theme="@style/StatusValue"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
